@@ -1,0 +1,111 @@
+@import './app.scss';
+
+@media only screen and (min-width: $app-breakpoint-large-width) and (min-height: $app-breakpoint-large-height) {
+  ion-modal::part(content) {
+    border-radius: $app-border-radius-large;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ion-button,
+ion-segment-button {
+  text-transform: none;
+}
+
+ion-button.button-solid {
+  --border-color: #{$app-button-border-color};
+  --border-style: #{$app-button-border-style};
+  --border-width: #{$app-button-border-width};
+  --box-shadow: none;
+}
+
+ion-card {
+  border: $app-card-border;
+  box-shadow: none;
+}
+
+ion-grid {
+  padding-left: $app-space-2;
+  padding-right: $app-space-2;
+}
+
+ion-searchbar {
+  --border-radius: #{$app-border-radius} !important;
+  --box-shadow: none !important;
+
+  & > div.searchbar-input-container.sc-ion-searchbar-md > input {
+    transition: $app-transition;
+  }
+
+  &:not(.searchbar-has-focus) > div.searchbar-input-container.sc-ion-searchbar-md > input {
+    background: $app-searchbar-background-color;
+  }
+}
+
+ion-segment {
+  justify-content: center;
+}
+
+ion-segment-button {
+  --background-hover-opacity: 0;
+}
+
+ion-toast {
+  &::part(button) {
+    text-transform: none;
+  }
+}
+
+ion-toolbar ion-avatar {
+  cursor: pointer;
+  margin-right: $app-header-avatar-margin;
+  width: $app-header-avatar-size;
+  height: $app-header-avatar-size;
+}
+
+.action-sheet-group.sc-ion-action-sheet-md:first-child,
+.picker-wrapper.sc-ion-picker-md {
+  border-radius: $app-border-radius-large $app-border-radius-large 0 0;
+}
+
+.action-sheet-title.sc-ion-action-sheet-md {
+  text-align: center;
+}
+
+.alert-button.sc-ion-alert-md,
+.picker-button.sc-ion-picker-md {
+  &,
+  &.ion-activated {
+    text-transform: none;
+  }
+}
+
+.alert-wrapper.sc-ion-alert-md {
+  border-radius: $app-border-radius-large;
+}
+
+.app-header-border {
+  border-bottom: $app-header-border;
+}
+
+.app-input-block {
+  border: $app-input-border;
+  border-radius: $app-border-radius;
+}
+
+.app-invisible {
+  opacity: 0;
+}
+
+.app-muted {
+  opacity: 0.65;
+}
+
+.app-progress-bar {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}

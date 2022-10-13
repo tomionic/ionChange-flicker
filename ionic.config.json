@@ -1,0 +1,13 @@
+{
+  "name": "dashboards",
+  "type": "angular",
+  "hooks": {
+    "build:before": [
+      "hooks/ionic/build/before.js"
+    ]
+  },
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  }
+}

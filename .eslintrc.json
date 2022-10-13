@@ -1,0 +1,145 @@
+{
+  "root": true,
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parserOptions": {
+        "project": "tsconfig.json",
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/ng-cli-compat",
+        "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/component-class-suffix": [
+          "error",
+          {
+            "suffixes": [
+              "Page",
+              "Component"
+            ]
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/no-output-native": 0,
+        "@typescript-eslint/ban-types": [
+          "error",
+          {
+            "types": {
+              "object": false
+            }
+          }
+        ],
+        "@typescript-eslint/member-ordering": [
+          "error",
+          {
+            "default": {
+              "memberTypes": [
+                "static-field",
+                "instance-field",
+                "abstract-field",
+                "constructor",
+                "static-method",
+                "instance-method",
+                "abstract-method"
+              ]
+            }
+          }
+        ],
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "enumMember",
+            "format": [
+              "PascalCase"
+            ]
+          }
+        ],
+        "arrow-body-style": 0,
+        "comma-dangle": [
+          "error",
+          "always-multiline"
+        ],
+        "no-empty": [
+          "error",
+          {
+            "allowEmptyCatch": true
+          }
+        ],
+        "no-underscore-dangle": 0,
+        "object-curly-spacing": [
+          "error",
+          "always"
+        ],
+        "prefer-arrow/prefer-arrow-functions": 0
+      }
+    },
+    {
+      "files": [
+        "*.js"
+      ],
+      "parserOptions": {
+        "ecmaVersion": 2021
+      },
+      "env": {
+        "es6": true,
+        "jasmine": true,
+        "node": true
+      },
+      "extends": [
+        "eslint:recommended"
+      ],
+      "rules": {
+        "arrow-body-style": 0,
+        "comma-dangle": [
+          "error",
+          "always-multiline"
+        ],
+        "no-empty": [
+          "error",
+          {
+            "allowEmptyCatch": true
+          }
+        ],
+        "no-underscore-dangle": 0,
+        "object-curly-spacing": [
+          "error",
+          "always"
+        ],
+        "prefer-arrow/prefer-arrow-functions": 0,
+        "semi": [
+          "error",
+          "always"
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<ion-list lines="none">
+  <ion-item>
+    <ion-select interface="action-sheet" placeholder="Select an item" (ionChange)="onChange()">
+      <ion-select-option *ngFor="let _ of '0'.repeat(10).split(''); let i = index">
+        Item {{ i }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>

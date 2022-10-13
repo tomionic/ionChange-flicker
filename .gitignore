@@ -1,0 +1,12 @@
+*.jks
+*.log
+*.png
+*.svg
+*.ttf
+/.angular
+/coverage
+/node_modules
+/package-lock.json
+/platforms
+/plugins
+/www

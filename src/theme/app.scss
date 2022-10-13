@@ -1,0 +1,39 @@
+$app-avatar-select-size: 50px;
+$app-avatar-select-margin: 10px;
+$app-border-radius: 4px;
+$app-border-radius-large: 10px;
+$app-border-radius-circle: 1000px;
+$app-breakpoint-large-height: 600px;
+$app-breakpoint-large-width: 768px;
+$app-button-border-color: var(--ion-border-color, var(--ion-color-step-150, rgba(0, 0, 0, 0.07)));
+$app-button-border-style: solid;
+$app-button-border-width: 1px;
+$app-card-border: $app-button-border-width $app-button-border-style $app-button-border-color;
+$app-color-select-size: $app-avatar-select-size;
+$app-color-select-margin: $app-avatar-select-margin;
+$app-header-avatar-margin: 11px;
+$app-header-avatar-size: 35px;
+$app-header-border: $app-card-border;
+$app-input-border: $app-card-border;
+$app-logo-height: 30px;
+$app-logo-margin: 13px;
+$app-modal-margin: 24px;
+$app-notification-icon-background: rgba(var(--ion-color-medium-rgb), 0.15);
+$app-question-margin: 16px;
+$app-question-padding: $app-question-margin;
+$app-reaction-select-size: 40px;
+$app-reaction-select-margin: $app-avatar-select-margin;
+$app-searchbar-background-color: rgba(var(--ion-color-medium-rgb), 0.15);
+$app-small-font-size: 14px;
+$app-space-1: 5px;
+$app-space-2: 10px;
+$app-space-3: 15px;
+$app-space-4: 20px;
+$app-space-5: 25px;
+$app-transition: 250ms ease-in-out;
+
+@mixin inline-space($app-space: $app-space-1) {
+  & > *:not(:first-child) {
+    margin-left: $app-space;
+  }
+}
